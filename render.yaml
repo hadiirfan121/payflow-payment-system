@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: payflow
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/state
+    autoDeploy: true
